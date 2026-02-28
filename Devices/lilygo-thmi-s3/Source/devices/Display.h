@@ -23,7 +23,8 @@ constexpr auto DISPLAY_I80_D7 = GPIO_NUM_46;
 constexpr auto DISPLAY_HORIZONTAL_RESOLUTION = 240;
 constexpr auto DISPLAY_VERTICAL_RESOLUTION = 320;
 
-// Touch (XPT2046, resistive, shared SPI with display)
+// Touch (XPT2046, resistive)
+constexpr auto TOUCH_SPI_HOST = SPI2_HOST;
 constexpr auto TOUCH_MISO_PIN = GPIO_NUM_4;
 constexpr auto TOUCH_MOSI_PIN = GPIO_NUM_3;
 constexpr auto TOUCH_SCK_PIN = GPIO_NUM_1;

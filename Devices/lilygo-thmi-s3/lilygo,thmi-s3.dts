@@ -13,4 +13,12 @@
 		compatible = "espressif,esp32-gpio";
 		gpio-count = <49>;
 	};
+	
+	spi0 {
+		compatible = "espressif,esp32-spi";
+		host = <SPI2_HOST>;
+		pin-mosi = <&gpio0 3 GPIO_FLAG_NONE>;
+		pin-miso = <&gpio0 4 GPIO_FLAG_NONE>;
+		pin-sclk = <&gpio0 1 GPIO_FLAG_NONE>;
+	};
 };
